@@ -1,3 +1,24 @@
 /*  Project 2 - Stylish Resume  */
 /*  Ryan Bierly - 09/07/2021    */
 
+#page-banner {
+    position: fixed;
+    background-color: wheat;
+    font-family: fantasy;
+    font-size: 100%;
+    width: 100%;
+    height: 150px;
+}
+
+.education-section {
+    padding-bottom: 250px;
+}
+
+section {
+    padding-top: 150px;
+}
+
+body {
+    background-color: thistle;
+    padding: 0%;
+}
