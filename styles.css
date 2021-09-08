@@ -1,24 +1,32 @@
 /*  Project 2 - Stylish Resume  */
 /*  Ryan Bierly - 09/07/2021    */
 
+/*
+    This is for the banner with Title and links
+    Should work as a fixed position banner
+*/
 #page-banner {
     position: fixed;
     background-color: wheat;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
     font-family: fantasy;
     font-size: 100%;
     width: 100%;
     height: 150px;
+    padding-left: 33%;
+}
+
+/* background of the whole page */
+body {
+    background-color: rgb(164, 202, 226);
 }
 
 .education-section {
-    padding-bottom: 250px;
+    padding-bottom: 250px; /* add padding to bottom so education link works nicely */
 }
 
 section {
-    padding-top: 150px;
-}
-
-body {
-    background-color: thistle;
-    padding: 0%;
+    padding-top: 150px; /* add padding so the banner doesn't block anything on banner links */
 }
