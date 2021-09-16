@@ -5,17 +5,20 @@
     This is for the banner with Title and links
     Should work as a fixed position banner
 */
-#page-banner {
+#page-banner{
     position: fixed;
     background-color: wheat;
-    border-color: black;
-    border-style: solid;
-    border-width: 5px;
     font-family: fantasy;
     font-size: 100%;
     width: 100%;
-    height: 150px;
-    padding-left: 36%;
+    height: 130px;
+    text-align: center;
+    color: blueviolet;
+}
+
+#page-banner a:hover {
+    color: blueviolet;
+    font-size: larger;
 }
 
 /* background of the whole page */
@@ -29,38 +32,47 @@ body {
 }
 
 section {
-    padding-top: 150px; /* add padding so the banner doesn't block anything on banner links */
+    padding-top: 10%; /* add padding so the banner doesn't block anything on banner links */
 }
 
+/* format all section headers to be centered */
 .section-header {
-    padding-left: 40%;
+    text-align: center;
     font-size: 150%;
 }
 
+/* make the contacts section centered */
+.contact-div {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* make the skills section span the screen width */
 .skills-section {
     width: 100%;
 }
 
+/* make the 2 sections of skills be side by side bordered */
 .skills-div {
     float: left;
     padding-left: 2%;
     width: 50%;
-    height: 275px;
+    height: 250px;
     box-sizing: border-box;
     border: 5px solid black;
+    font-size: small;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.contact-section {
-    width: 100%;
+.experience-section {
+    padding-top: 30px;
+    padding-left: 2%;
 }
 
-.contact-div {
-    float: left;
-    width: 50%;
-    height: 400px;
-    box-sizing: border-box;
+.projects-section {
+    padding-left: 2%;
 }
 
-#profile-image {
-    padding-left: 30%;
+.education-section {
+    padding-left: 2%;
 }
