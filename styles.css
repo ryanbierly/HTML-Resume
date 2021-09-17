@@ -1,9 +1,9 @@
 /*  Project 2 - Stylish Resume  */
-/*  Ryan Bierly - 09/07/2021    */
+/*  Ryan Bierly - 09/17/2021    */
 
-/*
-    This is for the banner with Title and links
-    Should work as a fixed position banner
+/*  
+    effects the top section only
+    position fixed to make it follow the page as a banner
 */
 #page-banner {
     position: fixed;
@@ -16,27 +16,31 @@
     color: beige;
 }
 
+/* actions when hovering over banner links */
 #page-banner a:hover {
     color: white;
     font-size: larger;
 }
 
-/* background of the whole page */
+/* have the page background be black with white text and no margins */
 body {
     background-color: rgb(32, 33, 36);
     color: white;
     margin: 0%;
+    padding-bottom: 40em;
 }
 
+/* keep page links white due to blue background */
 a {
     color: white;
 }
 
+/* start each section 7em down (for page banner) */
 section {
-    padding-top: 7em; /* add padding so the banner doesn't block anything on banner links */
+    padding-top: 7em;
 }
 
-/* format all section headers to be centered */
+/* effects every section header */ 
 .section-header {
     text-align: center;
     font-size: 1.7em;
@@ -45,31 +49,14 @@ section {
     border-radius: 1em;
 }
 
-/* make the contacts section centered */
+/* effects only the contact divs */
 .contact-div {
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* make the skills section span the screen width */
-.skills-section {
+/* effects all divs within sections */
+.section-div {
+    padding-left: 2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-/* make the 2 sections of skills be side by side bordered */
-.skills-div:not(.section-header){
-    padding-left: 2em;
-}
-
-.experience-section {
-    padding-left: 2em;
-}
-
-.projects-section {
-    padding-left: 2em;
-}
-
-.education-section {
-    padding-left: 2em;
-    padding-bottom: 30em;
 }
